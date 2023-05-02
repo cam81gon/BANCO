@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "80b050eb-c52e-4849-97c8-2e87ae205ad9",
+		"name": "BANCO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9166238"
+	},
+	"item": [
+		{
+			"name": "CLIENTE",
+			"item": [
+				{
+					"name": "http://localhost:9080/cliente/agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n        \r\n        \"nombre\": \"Veronica Salazar\",\r\n        \"genero\": \"Femenino\",\r\n        \"edad\": \"49\",\r\n        \"identificacion\": \"1717155555\",\r\n        \"direccion\": \"Guayaquil\",\r\n        \"telefono\":\"0984697777\",\r\n       \r\n        \"contrasena\": \"1598478547\",\r\n        \"estado\":true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/cliente/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"cliente",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9080/cliente/modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n        \r\n        \"nombre\": \"Juan Mena\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": \"40\",\r\n        \"identificacion\": \"1717197845\",\r\n        \"direccion\": \"Valle de los chillos\",\r\n        \"telefono\":\"0985475896\",\r\n\r\n       \r\n        \"contrasena\": \"12345678\",\r\n        \"estado\":true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/cliente/modificar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"cliente",
+								"modificar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9080/cliente/eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n     \r\n        \"identificacion\": \"1717155555\"\r\n        \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/cliente/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"cliente",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9080/cliente/obtenerPorIdentificacion",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n     \r\n        \"identificacion\": \"1717155555\"\r\n        \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9080/cliente/obtenerPorIdentificacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9080",
+							"path": [
+								"cliente",
+								"obtenerPorIdentificacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CUENTA",
+			"item": [
+				{
+					"name": "http://localhost:9080/cuenta/agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n        \"identificacion\": \"1717155555\",\r\n        \r\n        \"numeroCuenta\": \"148500025411\",\r\n        \"tipoCuenta\": \"Corriente\",\r\n        \"saldoInicial\": 20000.000,\r\n       \r\n        \r\n        \"estado\":true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/cuenta/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"cuenta",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9080/cuenta/modificar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n               \r\n        \"numeroCuenta\": \"9874563210\",\r\n        \"tipoCuenta\": \"Ahorro\",\r\n        \"saldoInicial\": 60000.000,\r\n       \r\n        \r\n        \"estado\":true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/cuenta/modificar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"cuenta",
+								"modificar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9080/cuenta/eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n        \r\n        \"numeroCuenta\": \"9874563210\"\r\n       \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/cuenta/eliminar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"cuenta",
+								"eliminar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9081/cuenta/obtenerCuenta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n     \r\n        \"numeroCuenta\": \"148500025411\"\r\n        \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9081/cuenta/obtenerCuenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9081",
+							"path": [
+								"cuenta",
+								"obtenerCuenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MOVIMIENTOS",
+			"item": [
+				{
+					"name": "http://localhost:9082/movimientos/agregar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n \"headerIn\": {\r\n        \"idCliente\": \"\",\r\n        \"ip\": \"10.0.177.108\",\r\n        \"sesion\": \"\",\r\n        \"idioma\": \"es-EC\",\r\n        \"fechaHora\": \"202106291811129170\",\r\n        \"guid\": \"\",\r\n        \"unicidad\": \"\",\r\n        \"usuario\": \"rgonzalc\",\r\n        \"geolocalizacion\": \"\",\r\n        \"tipoTransaccion\": \"00110010\",\r\n        \"aplicacion\": \"\",\r\n        \"medio\": \"\",\r\n        \"canal\": \"\",\r\n        \"empresa\": \"0001\",\r\n        \"dispositivo\": \"\",\r\n        \"tipoIdCliente\": \"\"\r\n    },\r\n    \"bodyIn\": {\r\n        \"cuenta\": \"148500025410\",\r\n        \r\n        \"tipoMovimiento\": \"Retiro 20 \",\r\n        \"valor\": 20\r\n        \r\n       \r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9082/movimientos/agregar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9082",
+							"path": [
+								"movimientos",
+								"agregar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
