@@ -1,0 +1,8 @@
+com\cliente\controller\ClienteController.class
+com\cliente\service\IClienteService.class
+com\cliente\util\Constantes.class
+com\cliente\service\impl\ClienteService.class
+com\cliente\repo\IClienteRepo.class
+com\cliente\model\Cliente.class
+com\cliente\model\Persona.class
+com\cliente\WsCliente0002Application.class
